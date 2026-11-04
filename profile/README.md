@@ -86,7 +86,7 @@ Forminit also supports **Protected** mode for server-side integrations. Keep API
 
 ## Build with AI
 
-Give your AI coding tool your Form ID and Forminit's [browser integration guide](https://forminit.com/setup/prompt.md):
+Give your AI coding tool your Form ID and Forminit's [browser integration guide](https://forminit.com/setup.md):
 
 ```text
 Connect my website's contact form to Forminit.
@@ -95,7 +95,7 @@ Form ID: YOUR_FORM_ID
 
 Keep my existing design, validation and form behaviour.
 Use Public browser mode and follow this guide:
-https://forminit.com/setup/prompt.md
+https://forminit.com/setup.md
 ```
 
 The guide covers field mapping, SDK integration, uploads, success and error handling, and checks that preserve your existing form behaviour.
