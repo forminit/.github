@@ -19,7 +19,8 @@ Keep your own design, frontend logic and hosting. Collect leads, support request
 
 [Workflows](https://forminit.com/docs/workflow/) let you decide what happens after each submission on a visual canvas.
 
-- Branch with **If / else** conditions using form answers, sender details or tracking data.
+- Classify submissions with **[AI Classify](https://forminit.com/docs/ai-classify/)** to filter spam, qualify leads and identify support topics or urgency.
+- Branch with **If / else** conditions using form answers, AI classifications, sender details or tracking data.
 - Send email notifications and autoresponders, call webhooks, notify Slack or Discord, and add rows to Google Sheets.
 - Update submission statuses or move matching submissions to Spam or Trash.
 - Inspect action results and errors, then retry an individual failed action.
@@ -27,7 +28,15 @@ Keep your own design, frontend logic and hosting. Collect leads, support request
 
 For example, a quote form can save every enquiry to Google Sheets, notify Slack when the submitted budget exceeds your threshold, and email the remaining enquiries to your team.
 
-Email notifications, conditions and status actions are available on **Free**. Autoresponders, webhooks, Slack, Discord and Google Sheets require **Pro or higher**.
+Email notifications, conditions, status actions and AI Classify are available on **Free**. Autoresponders, webhooks, Slack, Discord and Google Sheets require **Pro or higher**.
+
+### Classify submissions with AI
+
+[AI Classify](https://forminit.com/docs/ai-classify/) reads the fields you choose and answers up to **10 questions per step**. Define your own questions or start with ready-made sets for spam filtering, lead qualification, support triage and more.
+
+Answers are saved with each submission as **Choice**, **Score** or **Yes / No** values. Use them in later workflow steps to route requests, personalise notifications or pass enriched data to your tools.
+
+For example, ask “Which team should handle this enquiry?” and use the answer to email sales or support automatically.
 
 ## Form infrastructure included
 
@@ -37,6 +46,7 @@ Email notifications, conditions and status actions are available on **Free**. Au
 | [File uploads](https://forminit.com/docs/file-upload/) | Stored attachments with up to 25 MB of files per submission. |
 | Spam protection | Built-in filtering, plus [Turnstile](https://forminit.com/docs/cloudflare-turnstile/), [reCAPTCHA](https://forminit.com/docs/recaptcha/), [hCaptcha](https://forminit.com/docs/hcaptcha/) and [honeypots](https://forminit.com/docs/honeypot/). |
 | Submission inbox | Search, filters, statuses, stars and internal notes to manage incoming requests. |
+| [AI Classify](https://forminit.com/docs/ai-classify/) | Turn submission content into categories, scores and yes/no answers for automated routing and follow-up. |
 | Attribution and analytics | The JavaScript SDK captures UTM parameters and ad click IDs; form analytics help you understand where submissions come from. |
 | [MCP server](https://forminit.com/docs/mcp/) | Connect AI tools to read submissions, manage forms, explore submission data and investigate issues. |
 | [Signed webhooks](https://forminit.com/docs/webhooks/) | Forward submission data to your services and verify incoming webhook signatures. |
@@ -140,6 +150,7 @@ No credit card required. The Free plan includes:
 - Server-side validation and spam protection
 - Email notifications and custom redirections
 - Workflows with conditions, email notifications and status actions
+- **1 AI Classify step per workflow**
 - MCP server access to work with your forms from compatible AI tools
 - An unlimited submission archive; spam is automatically deleted after 30 days
 
@@ -151,7 +162,7 @@ No credit card required. The Free plan includes:
 - **Backend:** [Node.js](https://forminit.com/docs/nodejs/) · [Python](https://forminit.com/docs/python/) · [Flask](https://forminit.com/docs/flask/) · [Django](https://forminit.com/docs/django/) · [FastAPI](https://forminit.com/docs/fastapi/) · [Cloudflare Workers](https://forminit.com/docs/cloudflare-workers/)
 - **Website platforms:** [Webflow](https://forminit.com/docs/webflow/) · [WordPress](https://forminit.com/docs/wordpress/) · [Squarespace](https://forminit.com/docs/squarespace/) · [Ghost](https://forminit.com/docs/ghost/)
 - **Connect your tools:** [Google Sheets](https://forminit.com/docs/google-sheets/) · [Zapier](https://forminit.com/docs/zapier/) · [Slack](https://forminit.com/docs/slack-notifications/) · [Discord](https://forminit.com/docs/discord-notifications/) · [Webhooks](https://forminit.com/docs/webhooks/)
-- **AI tools:** [MCP server setup for Claude, ChatGPT, Codex, Cursor, VS Code and more](https://forminit.com/docs/mcp/)
+- **AI and automation:** [AI Classify](https://forminit.com/docs/ai-classify/) · [Workflows](https://forminit.com/docs/workflow/) · [MCP server](https://forminit.com/docs/mcp/)
 
 Forminit works wherever you can send an HTTP request, including static sites, serverless functions, mobile apps and custom backends. [Browse all guides](https://forminit.com/docs/).
 
