@@ -6,7 +6,7 @@
 
 Keep your own design, frontend logic and hosting. Collect leads, support requests, applications and feedback, then manage and act on every submission from one place.
 
-[Start free — no credit card](https://app.forminit.com/) · [Documentation](https://forminit.com/docs/) · [Pricing](https://forminit.com/pricing/) · [Service status](https://status.forminit.com/)
+[Start free — no credit card](https://app.forminit.com/) · [Documentation](https://forminit.com/docs/) · [MCP server](https://forminit.com/docs/mcp/) · [Pricing](https://forminit.com/pricing/) · [Service status](https://status.forminit.com/)
 
 ## What you can build with Forminit
 
@@ -38,6 +38,7 @@ Email notifications, conditions and status actions are available on **Free**. Au
 | Spam protection | Built-in filtering, plus [Turnstile](https://forminit.com/docs/cloudflare-turnstile/), [reCAPTCHA](https://forminit.com/docs/recaptcha/), [hCaptcha](https://forminit.com/docs/hcaptcha/) and [honeypots](https://forminit.com/docs/honeypot/). |
 | Submission inbox | Search, filters, statuses, stars and internal notes to manage incoming requests. |
 | Attribution and analytics | The JavaScript SDK captures UTM parameters and ad click IDs; form analytics help you understand where submissions come from. |
+| [MCP server](https://forminit.com/docs/mcp/) | Connect AI tools to read submissions, manage forms, explore submission data and investigate issues. |
 | [Signed webhooks](https://forminit.com/docs/webhooks/) | Forward submission data to your services and verify incoming webhook signatures. |
 | [Data retention](https://forminit.com/docs/submission-retention/) | Set how long to keep submissions and automatically delete expired records and their files. |
 | [Workspaces](https://forminit.com/docs/workspace/) | Organise teams and client projects with Owner, Admin, Editor and Guest roles. |
@@ -102,6 +103,34 @@ The guide covers field mapping, SDK integration, uploads, success and error hand
 
 More resources: [Build with AI](https://forminit.com/docs/build-with-ai/) · [AI tools guide](https://forminit.com/docs/ai-tools/) · [Machine-readable documentation](https://forminit.com/llms.txt)
 
+## Connect your AI tools with MCP
+
+The [Forminit MCP server](https://forminit.com/docs/mcp/) connects Claude, ChatGPT, Codex, Cursor, VS Code and other compatible AI tools to your Forminit account. Manage forms and work with submissions in plain language, directly from your chat or coding environment.
+
+- **Read and triage submissions:** find messages, summarise enquiries, update statuses and add team notes.
+- **Explore submission data:** count submissions by day, country, city, device or browser.
+- **Create and connect forms:** create a form and get integration guidance for your stack.
+- **Investigate issues:** check for failed notifications, integrations and workflow runs.
+
+For example, ask:
+
+```text
+Create a waitlist form and connect it to my Next.js app.
+Summarise this week's contact enquiries.
+How many signups came from each country in the last 30 days?
+Check my forms for failed notifications and integrations.
+```
+
+**MCP server URL:**
+
+```text
+https://api.forminit.com/mcp
+```
+
+Sign in with your Forminit account through OAuth and approve the requested permissions. No API key required. Available on **all plans, including Free**, with your existing account permissions and plan limits.
+
+[Connect your AI tool →](https://forminit.com/docs/mcp/)
+
 ## Start free
 
 No credit card required. The Free plan includes:
@@ -111,6 +140,7 @@ No credit card required. The Free plan includes:
 - Server-side validation and spam protection
 - Email notifications and custom redirections
 - Workflows with conditions, email notifications and status actions
+- MCP server access to work with your forms from compatible AI tools
 - An unlimited submission archive; spam is automatically deleted after 30 days
 
 [Compare plans](https://forminit.com/pricing/) for more forms and submissions, integrations, CSV export, REST API access, analytics, retention controls and team features.
@@ -121,6 +151,7 @@ No credit card required. The Free plan includes:
 - **Backend:** [Node.js](https://forminit.com/docs/nodejs/) · [Python](https://forminit.com/docs/python/) · [Flask](https://forminit.com/docs/flask/) · [Django](https://forminit.com/docs/django/) · [FastAPI](https://forminit.com/docs/fastapi/) · [Cloudflare Workers](https://forminit.com/docs/cloudflare-workers/)
 - **Website platforms:** [Webflow](https://forminit.com/docs/webflow/) · [WordPress](https://forminit.com/docs/wordpress/) · [Squarespace](https://forminit.com/docs/squarespace/) · [Ghost](https://forminit.com/docs/ghost/)
 - **Connect your tools:** [Google Sheets](https://forminit.com/docs/google-sheets/) · [Zapier](https://forminit.com/docs/zapier/) · [Slack](https://forminit.com/docs/slack-notifications/) · [Discord](https://forminit.com/docs/discord-notifications/) · [Webhooks](https://forminit.com/docs/webhooks/)
+- **AI tools:** [MCP server setup for Claude, ChatGPT, Codex, Cursor, VS Code and more](https://forminit.com/docs/mcp/)
 
 Forminit works wherever you can send an HTTP request, including static sites, serverless functions, mobile apps and custom backends. [Browse all guides](https://forminit.com/docs/).
 
