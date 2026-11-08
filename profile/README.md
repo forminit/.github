@@ -1,6 +1,6 @@
 # Forminit
 
-**The complete backend for all your forms.**
+**The form backend for websites, apps and AI agents**
 
 [Forminit](https://forminit.com/) (formerly Getform.io) is a headless form backend API for websites and applications. Build your forms with any stack or AI coding tool. Forminit handles submissions, validation, spam protection, file storage, notifications and workflows.
 
